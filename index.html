@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Merci pour votre demande !</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff7f7;
+      color: #333;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    h1 {
+      color: #a10000;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    .cadine {
+      font-family: 'Georgia', serif;
+      font-style: italic;
+    }
+    p {
+      font-size: 1.2em;
+      margin: 15px 0;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background-color: #a10000;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    a.button:hover {
+      background-color: #880000;
+    }
+  </style>
+
+  <!-- Lottie animation & confettis -->
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script>
+    window.onload = () => {
+      confetti({
+        particleCount: 100,
+        spread: 90,
+        origin: { y: 0.6 }
+      });
+    };
+  </script>
+</head>
+<body>
+
+  <!-- Animation contrat signé -->
+  <lottie-player 
+    src="https://assets10.lottiefiles.com/packages/lf20_gjmecwii.json"  
+    background="transparent"  
+    speed="1"  
+    style="width: 240px; height: 240px; margin: 0 auto;"  
+    loop  
+    autoplay>
+  </lottie-player>
+
+  <h1>🎉 Merci pour votre demande de matériel !</h1>
+
+  <p><strong>Votre demande pour <span class="cadine">La Cadine</span> a bien été enregistrée 📦</strong></p>
+  <p>Nous allons préparer votre contrat de location dans les plus brefs délais.<br>Vous le recevrez très prochainement pour signature électronique ✍️</p>
+
+  <hr style="margin:30px 0; border:none; border-top:1px solid #ddd; width:80%;" />
+
+  <p>❤️ Une question ? Une précision de dernière minute ?<br>
+  Nous restons disponibles :</p>
+  <p>
+    ✉️ <a href="mailto:contact@la-cadine.fr">contact@la-cadine.fr</a><br>
+    📞 <a href="tel:+33786865996">07 86 86 59 96</a>
+  </p>
+
+</body>
+</html>
